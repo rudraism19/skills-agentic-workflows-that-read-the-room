@@ -1,0 +1,590 @@
+{
+  "schema_version": 2,
+  "cache_source": "full",
+  "overview": {
+    "run_id": 36942916889,
+    "workflow_name": "update-github-info",
+    "status": "completed",
+    "conclusion": "failure",
+    "created_at": "2026-10-01T23:50:26Z",
+    "started_at": "2026-10-01T23:50:26Z",
+    "updated_at": "2026-10-01T23:51:04Z",
+    "duration": "38.0s",
+    "event": "schedule",
+    "branch": "main",
+    "url": "https://github.com/rudraism19/skills-agentic-workflows-that-read-the-room/actions/runs/36942916889",
+    "logs_path": "/workspaces/skills-agentic-workflows-that-read-the-room/.github/aw/logs/run-36942916889"
+  },
+  "comparison": {
+    "baseline_found": false
+  },
+  "task_domain": {
+    "name": "repo_maintenance",
+    "label": "Repo Maintenance",
+    "reason": "Workflow metadata matches repository maintenance or update work."
+  },
+  "behavior_fingerprint": {
+    "execution_style": "directed",
+    "tool_breadth": "narrow",
+    "actuation_style": "read_only",
+    "resource_profile": "lean",
+    "dispatch_mode": "standalone",
+    "agentic_fraction": 0
+  },
+  "agentic_assessments": [
+    {
+      "kind": "overkill_for_agentic",
+      "severity": "low",
+      "summary": "This Repo Maintenance run looks stable enough that deterministic automation may be a simpler fit.",
+      "evidence": "turns=0 tool_types=0 actuation=read_only",
+      "recommendation": "Consider whether a scripted rule or deterministic workflow step could replace this agentic path."
+    }
+  ],
+  "metrics": {
+    "working_set": {
+      "measurement_state": "unavailable",
+      "cumulative_input_tokens": 0,
+      "peak_input_tokens": 0,
+      "rebuild_excess_tokens": 0,
+      "invocations": 0
+    },
+    "action_minutes": 1,
+    "error_count": 1,
+    "warning_count": 0
+  },
+  "key_findings": [
+    {
+      "code": "workflow_failed",
+      "category": "error",
+      "severity": "critical",
+      "title": "Workflow Failed",
+      "description": "Workflow 'update-github-info' failed with 1 error(s): ##[error]Process completed with exit code 1.",
+      "impact": "Workflow did not complete successfully and may need intervention"
+    },
+    {
+      "code": "agentic_overkill_for_agentic",
+      "category": "optimization",
+      "severity": "low",
+      "title": "Potential Deterministic Alternative",
+      "description": "This Repo Maintenance run looks stable enough that deterministic automation may be a simpler fit.",
+      "impact": "A deterministic implementation may be cheaper and easier to govern"
+    }
+  ],
+  "recommendations": [
+    {
+      "priority": "high",
+      "action": "Review error logs to identify root cause of failure",
+      "reason": "Understanding failure causes helps prevent recurrence",
+      "example": "Check the errors field for specific error messages, or inspect the log files in logs_path"
+    },
+    {
+      "priority": "medium",
+      "action": "Consider whether a scripted rule or deterministic workflow step could replace this agentic path.",
+      "reason": "This Repo Maintenance run looks stable enough that deterministic automation may be a simpler fit."
+    }
+  ],
+  "observability_insights": [
+    {
+      "category": "execution",
+      "severity": "info",
+      "title": "Directed execution path",
+      "summary": "The run remained relatively linear with 0 turns and 0 tool types.",
+      "evidence": "turns=0 tool_types=0"
+    },
+    {
+      "category": "actuation",
+      "severity": "info",
+      "title": "Read-only posture observed",
+      "summary": "The workflow stayed in an analysis posture and did not emit any GitHub write actions.",
+      "evidence": "created_items=0 safe_items=0"
+    },
+    {
+      "category": "execution",
+      "severity": "info",
+      "title": "Log template patterns mined",
+      "summary": "Analysis identified 2 distinct event templates across 6 pipeline stages from 1 events.",
+      "evidence": "finish=1 plan=1"
+    },
+    {
+      "category": "execution",
+      "severity": "info",
+      "title": "Agent stage sequence",
+      "summary": "The observed pipeline stage sequence for this run.",
+      "evidence": "finish"
+    }
+  ],
+  "performance_metrics": {},
+  "engine_config": {
+    "engine_id": "copilot",
+    "engine_name": "GitHub Copilot CLI",
+    "model": "auto",
+    "version": "1.0.87",
+    "cli_version": "v0.89.21",
+    "firewall_version": "v0.28.23",
+    "trigger_event": "schedule",
+    "repository": "rudraism19/skills-agentic-workflows-that-read-the-room"
+  },
+  "session_analysis": {
+    "wall_time": "38.0s",
+    "timeout_detected": false
+  },
+  "jobs": [
+    {
+      "name": "activation",
+      "status": "completed",
+      "conclusion": "failure",
+      "duration": "12.0s",
+      "steps": [
+        {
+          "name": "Set up job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 1,
+          "started_at": "2026-10-01T23:50:36Z",
+          "completed_at": "2026-10-01T23:50:38Z"
+        },
+        {
+          "name": "Setup Scripts",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 2,
+          "started_at": "2026-10-01T23:50:38Z",
+          "completed_at": "2026-10-01T23:50:41Z"
+        },
+        {
+          "name": "Mask OTLP telemetry headers",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 3,
+          "started_at": "2026-10-01T23:50:41Z",
+          "completed_at": "2026-10-01T23:50:41Z"
+        },
+        {
+          "name": "Generate agentic run info",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 4,
+          "started_at": "2026-10-01T23:50:41Z",
+          "completed_at": "2026-10-01T23:50:42Z"
+        },
+        {
+          "name": "Restore daily AIC scan observations",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 5,
+          "started_at": "2026-10-01T23:50:42Z",
+          "completed_at": "2026-10-01T23:50:42Z"
+        },
+        {
+          "name": "Check daily workflow token guardrail",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 6,
+          "started_at": "2026-10-01T23:50:42Z",
+          "completed_at": "2026-10-01T23:50:43Z"
+        },
+        {
+          "name": "Publish daily AIC scan observations",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 7,
+          "started_at": "2026-10-01T23:50:43Z",
+          "completed_at": "2026-10-01T23:50:44Z"
+        },
+        {
+          "name": "Validate COPILOT_GITHUB_TOKEN secret",
+          "status": "completed",
+          "conclusion": "failure",
+          "number": 8,
+          "started_at": "2026-10-01T23:50:44Z",
+          "completed_at": "2026-10-01T23:50:44Z"
+        },
+        {
+          "name": "Check for OAuth tokens",
+          "status": "completed",
+          "conclusion": "skipped",
+          "number": 9,
+          "started_at": "2026-10-01T23:50:44Z",
+          "completed_at": "2026-10-01T23:50:44Z"
+        },
+        {
+          "name": "Checkout .github and .agents folders",
+          "status": "completed",
+          "conclusion": "skipped",
+          "number": 10,
+          "started_at": "2026-10-01T23:50:44Z",
+          "completed_at": "2026-10-01T23:50:44Z"
+        },
+        {
+          "name": "Save agent config folders for base branch restoration",
+          "status": "completed",
+          "conclusion": "skipped",
+          "number": 11,
+          "started_at": "2026-10-01T23:50:44Z",
+          "completed_at": "2026-10-01T23:50:44Z"
+        },
+        {
+          "name": "Check workflow lock file",
+          "status": "completed",
+          "conclusion": "skipped",
+          "number": 12,
+          "started_at": "2026-10-01T23:50:44Z",
+          "completed_at": "2026-10-01T23:50:44Z"
+        },
+        {
+          "name": "Check compile-agentic version",
+          "status": "completed",
+          "conclusion": "skipped",
+          "number": 13,
+          "started_at": "2026-10-01T23:50:44Z",
+          "completed_at": "2026-10-01T23:50:44Z"
+        },
+        {
+          "name": "Log runtime features",
+          "status": "completed",
+          "conclusion": "skipped",
+          "number": 14,
+          "started_at": "2026-10-01T23:50:44Z",
+          "completed_at": "2026-10-01T23:50:44Z"
+        },
+        {
+          "name": "Create prompt with built-in context",
+          "status": "completed",
+          "conclusion": "skipped",
+          "number": 15,
+          "started_at": "2026-10-01T23:50:44Z",
+          "completed_at": "2026-10-01T23:50:44Z"
+        },
+        {
+          "name": "Interpolate variables and render templates",
+          "status": "completed",
+          "conclusion": "skipped",
+          "number": 16,
+          "started_at": "2026-10-01T23:50:44Z",
+          "completed_at": "2026-10-01T23:50:44Z"
+        },
+        {
+          "name": "Substitute placeholders",
+          "status": "completed",
+          "conclusion": "skipped",
+          "number": 17,
+          "started_at": "2026-10-01T23:50:44Z",
+          "completed_at": "2026-10-01T23:50:44Z"
+        },
+        {
+          "name": "Validate prompt placeholders",
+          "status": "completed",
+          "conclusion": "skipped",
+          "number": 18,
+          "started_at": "2026-10-01T23:50:44Z",
+          "completed_at": "2026-10-01T23:50:44Z"
+        },
+        {
+          "name": "Print prompt",
+          "status": "completed",
+          "conclusion": "skipped",
+          "number": 19,
+          "started_at": "2026-10-01T23:50:44Z",
+          "completed_at": "2026-10-01T23:50:44Z"
+        },
+        {
+          "name": "Upload info artifact",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 20,
+          "started_at": "2026-10-01T23:50:44Z",
+          "completed_at": "2026-10-01T23:50:44Z"
+        },
+        {
+          "name": "Stage prompt files for artifact upload",
+          "status": "completed",
+          "conclusion": "skipped",
+          "number": 21,
+          "started_at": "2026-10-01T23:50:44Z",
+          "completed_at": "2026-10-01T23:50:44Z"
+        },
+        {
+          "name": "Upload activation artifact",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 22,
+          "started_at": "2026-10-01T23:50:44Z",
+          "completed_at": "2026-10-01T23:50:45Z"
+        },
+        {
+          "name": "Post Setup Scripts",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 44,
+          "started_at": "2026-10-01T23:50:45Z",
+          "completed_at": "2026-10-01T23:50:45Z"
+        },
+        {
+          "name": "Complete job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 45,
+          "started_at": "2026-10-01T23:50:45Z",
+          "completed_at": "2026-10-01T23:50:45Z"
+        }
+      ]
+    },
+    {
+      "name": "agent",
+      "status": "completed",
+      "conclusion": "skipped"
+    },
+    {
+      "name": "detection",
+      "status": "completed",
+      "conclusion": "skipped"
+    },
+    {
+      "name": "conclusion",
+      "status": "completed",
+      "conclusion": "success",
+      "duration": "13.0s",
+      "steps": [
+        {
+          "name": "Set up job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 1,
+          "started_at": "2026-10-01T23:50:51Z",
+          "completed_at": "2026-10-01T23:50:53Z"
+        },
+        {
+          "name": "Setup Scripts",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 2,
+          "started_at": "2026-10-01T23:50:53Z",
+          "completed_at": "2026-10-01T23:50:55Z"
+        },
+        {
+          "name": "Download agent output artifact",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 3,
+          "started_at": "2026-10-01T23:50:55Z",
+          "completed_at": "2026-10-01T23:50:57Z"
+        },
+        {
+          "name": "Setup agent output environment variable",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 4,
+          "started_at": "2026-10-01T23:50:57Z",
+          "completed_at": "2026-10-01T23:50:57Z"
+        },
+        {
+          "name": "Download detection artifact",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 5,
+          "started_at": "2026-10-01T23:50:57Z",
+          "completed_at": "2026-10-01T23:50:57Z"
+        },
+        {
+          "name": "Download Safe Outputs Items Manifest",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 6,
+          "started_at": "2026-10-01T23:50:57Z",
+          "completed_at": "2026-10-01T23:50:57Z"
+        },
+        {
+          "name": "Collect usage artifact files",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 7,
+          "started_at": "2026-10-01T23:50:57Z",
+          "completed_at": "2026-10-01T23:50:57Z"
+        },
+        {
+          "name": "Upload usage artifact",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 8,
+          "started_at": "2026-10-01T23:50:57Z",
+          "completed_at": "2026-10-01T23:50:58Z"
+        },
+        {
+          "name": "Wait before retrying usage artifact upload",
+          "status": "completed",
+          "conclusion": "skipped",
+          "number": 9,
+          "started_at": "2026-10-01T23:50:58Z",
+          "completed_at": "2026-10-01T23:50:58Z"
+        },
+        {
+          "name": "Retry upload usage artifact",
+          "status": "completed",
+          "conclusion": "skipped",
+          "number": 10,
+          "started_at": "2026-10-01T23:50:58Z",
+          "completed_at": "2026-10-01T23:50:58Z"
+        },
+        {
+          "name": "Process no-op messages",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 11,
+          "started_at": "2026-10-01T23:50:58Z",
+          "completed_at": "2026-10-01T23:50:58Z"
+        },
+        {
+          "name": "Log detection run",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 12,
+          "started_at": "2026-10-01T23:50:58Z",
+          "completed_at": "2026-10-01T23:50:59Z"
+        },
+        {
+          "name": "Record missing tool",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 13,
+          "started_at": "2026-10-01T23:50:59Z",
+          "completed_at": "2026-10-01T23:50:59Z"
+        },
+        {
+          "name": "Record incomplete",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 14,
+          "started_at": "2026-10-01T23:50:59Z",
+          "completed_at": "2026-10-01T23:50:59Z"
+        },
+        {
+          "name": "Handle agent failure",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 15,
+          "started_at": "2026-10-01T23:50:59Z",
+          "completed_at": "2026-10-01T23:51:01Z"
+        },
+        {
+          "name": "Report failed jobs",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 16,
+          "started_at": "2026-10-01T23:51:01Z",
+          "completed_at": "2026-10-01T23:51:01Z"
+        },
+        {
+          "name": "Post Setup Scripts",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 32,
+          "started_at": "2026-10-01T23:51:01Z",
+          "completed_at": "2026-10-01T23:51:02Z"
+        },
+        {
+          "name": "Complete job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 33,
+          "started_at": "2026-10-01T23:51:02Z",
+          "completed_at": "2026-10-01T23:51:02Z"
+        }
+      ]
+    },
+    {
+      "name": "safe_outputs",
+      "status": "completed",
+      "conclusion": "skipped"
+    }
+  ],
+  "downloaded_files": [
+    {
+      "path": "/workspaces/skills-agentic-workflows-that-read-the-room/.github/aw/logs/run-36942916889/.downloaded-artifacts/all",
+      "size": 0,
+      "description": ""
+    },
+    {
+      "path": "/workspaces/skills-agentic-workflows-that-read-the-room/.github/aw/logs/run-36942916889/agentic-workflow-usage-scan-v2.jsonl",
+      "size": 1,
+      "description": "JSON Lines data file"
+    },
+    {
+      "path": "/workspaces/skills-agentic-workflows-that-read-the-room/.github/aw/logs/run-36942916889/aw_info.json",
+      "size": 860,
+      "description": "Engine configuration and workflow metadata"
+    },
+    {
+      "path": "/workspaces/skills-agentic-workflows-that-read-the-room/.github/aw/logs/run-36942916889/github_rate_limits.jsonl",
+      "size": 1194,
+      "description": "JSON Lines data file"
+    },
+    {
+      "path": "/workspaces/skills-agentic-workflows-that-read-the-room/.github/aw/logs/run-36942916889/jobs.json",
+      "size": 12094,
+      "description": "JSON data file"
+    },
+    {
+      "path": "/workspaces/skills-agentic-workflows-that-read-the-room/.github/aw/logs/run-36942916889/models.json",
+      "size": 15894,
+      "description": "JSON data file"
+    },
+    {
+      "path": "/workspaces/skills-agentic-workflows-that-read-the-room/.github/aw/logs/run-36942916889/run_summary.json",
+      "size": 20107,
+      "description": "Cached summary of workflow run analysis"
+    },
+    {
+      "path": "/workspaces/skills-agentic-workflows-that-read-the-room/.github/aw/logs/run-36942916889/usage/activity/summary.json",
+      "size": 222,
+      "description": "JSON data file"
+    },
+    {
+      "path": "/workspaces/skills-agentic-workflows-that-read-the-room/.github/aw/logs/run-36942916889/usage/detection/token_usage.jsonl",
+      "size": 0,
+      "description": "JSON Lines data file"
+    },
+    {
+      "path": "/workspaces/skills-agentic-workflows-that-read-the-room/.github/aw/logs/run-36942916889/workflow-logs/0_conclusion.txt",
+      "size": 41443,
+      "description": "Text file"
+    },
+    {
+      "path": "/workspaces/skills-agentic-workflows-that-read-the-room/.github/aw/logs/run-36942916889/workflow-logs/4_activation.txt",
+      "size": 29684,
+      "description": "Text file"
+    },
+    {
+      "path": "/workspaces/skills-agentic-workflows-that-read-the-room/.github/aw/logs/run-36942916889/workflow-logs/activation/system.txt",
+      "size": 627,
+      "description": "Text file"
+    },
+    {
+      "path": "/workspaces/skills-agentic-workflows-that-read-the-room/.github/aw/logs/run-36942916889/workflow-logs/conclusion/system.txt",
+      "size": 1573,
+      "description": "Text file"
+    }
+  ],
+  "github_rate_limit_usage": {
+    "total_requests_made": 6,
+    "core_consumed": 3,
+    "core_consumed_source": "response_headers_delta",
+    "core_remaining": 4996,
+    "core_limit": 5000,
+    "resources": [
+      {
+        "resource": "core",
+        "requests_made": 6,
+        "quota_consumed": 3,
+        "final_remaining": 4996,
+        "limit": 5000
+      }
+    ]
+  },
+  "errors": [
+    {
+      "type": "step_failure",
+      "message": "##[error]Process completed with exit code 1.",
+      "file": "activation"
+    }
+  ]
+}
