@@ -1,0 +1,6 @@
+{"timestamp":"2026-10-01T23:50:42.544Z","source":"response_headers","operation":"actions.getWorkflowRun","resource":"core","limit":5000,"remaining":4999,"used":1,"reset":"2026-10-02T00:50:42.000Z"}
+{"timestamp":"2026-10-01T23:50:42.664Z","source":"response_headers","operation":"actions.listWorkflowRuns","resource":"core","limit":5000,"remaining":4998,"used":2,"reset":"2026-10-02T00:50:42.000Z"}
+{"timestamp":"2026-10-01T23:50:43.107Z","source":"response_headers","operation":"actions.getWorkflowRun","resource":"core","limit":5000,"remaining":4997,"used":3,"reset":"2026-10-02T00:50:42.000Z"}
+{"timestamp":"2026-10-01T23:50:43.107Z","source":"response_headers","operation":"actions.getWorkflowRun","resource":"core","limit":5000,"remaining":4997,"used":3,"reset":"2026-10-02T00:50:42.000Z"}
+{"timestamp":"2026-10-01T23:50:43.286Z","source":"response_headers","operation":"actions.listWorkflowRuns","resource":"core","limit":5000,"remaining":4996,"used":4,"reset":"2026-10-02T00:50:42.000Z"}
+{"timestamp":"2026-10-01T23:50:43.286Z","source":"response_headers","operation":"actions.listWorkflowRuns","resource":"core","limit":5000,"remaining":4996,"used":4,"reset":"2026-10-02T00:50:42.000Z"}

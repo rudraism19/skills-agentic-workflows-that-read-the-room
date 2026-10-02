@@ -1,0 +1,34 @@
+{
+  "engine_id": "copilot",
+  "engine_name": "GitHub Copilot CLI",
+  "model": "auto",
+  "version": "1.0.87",
+  "agent_version": "1.0.87",
+  "workflow_name": "update-github-info",
+  "experimental": false,
+  "supports_tools_allowlist": true,
+  "cache_memory": false,
+  "run_id": 36942916889,
+  "run_number": 1,
+  "run_attempt": "1",
+  "repository": "rudraism19/skills-agentic-workflows-that-read-the-room",
+  "ref": "refs/heads/main",
+  "sha": "aa655cb67bbe480196c8d94ea85253558cf4d979",
+  "actor": "rudraism19",
+  "event_name": "schedule",
+  "target_repo": "",
+  "staged": false,
+  "allowed_domains": [
+    "github.blog",
+    "github.com"
+  ],
+  "firewall_enabled": true,
+  "awf_version": "v0.28.23",
+  "awmg_version": "",
+  "agent_runtime": "",
+  "steps": {
+    "firewall": "squid"
+  },
+  "created_at": "2026-10-01T23:50:41.910Z",
+  "cli_version": "v0.89.21"
+}
