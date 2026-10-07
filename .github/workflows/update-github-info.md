@@ -4,6 +4,9 @@ on:
   schedule: daily
   workflow_dispatch:
 
+engine: copilot
+model: gpt-5-mini
+
 permissions:
   contents: read
 
