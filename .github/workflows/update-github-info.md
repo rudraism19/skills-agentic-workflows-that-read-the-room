@@ -9,6 +9,7 @@ model: gpt-5-mini
 
 permissions:
   contents: read
+  copilot-requests: write
 
 tools:
   edit: {}
