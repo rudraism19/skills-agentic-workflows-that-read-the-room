@@ -21,6 +21,9 @@ jobs:
       - name: Compile workflow
         run: gh aw compile .github/workflows/update-github-info.md
 
+      - name: Show generated diff
+        run: git diff --no-ext-diff -- .github/workflows/update-github-info.lock.yml
+
       - name: Commit generated lock file
         run: |
           git config user.name "github-actions[bot]"
