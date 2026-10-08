@@ -5,7 +5,7 @@ on:
   workflow_dispatch:
 
 engine: copilot
-model: gpt-5-mini
+model: gpt-5.4
 
 permissions:
   contents: read
